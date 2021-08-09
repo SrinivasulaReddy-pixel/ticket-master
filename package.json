@@ -1,4 +1,8 @@
 {
+  "name": "ticket-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
@@ -10,14 +14,18 @@
     "mongoose": "^5.13.3",
     "validator": "^13.6.0"
   },
+  "devDependencies": {},
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "install": "cd client && npm run build",
-    "heroku-prebuild": "npm install",
-    "heroku-postbuild": "cd client && npm install && npm run build"
-}, 
+    "heroku-postbuild": "cd client && npm install && npm run build" ,
+    "dev":  "concurrently \"nodemon index.js\" \"cd client && npm start\""
+  },
 "engines": {
     "node": "^10.3.0", 
     "npm": "^6.8.0" 
-}
+},
+"keywords": [],
+  "author": "",
+  "license": "ISC"
 }
