@@ -15,7 +15,6 @@ app.get('*', (req, res) => {
 });
 //end of deployment changes
 
-
 app.use(cors());
 app.use(express.json());
 
