@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const setupDB = () => {
   mongoose
-    .connect('mongodb+srv://Balu:Balu%642021@cluster0.hagxy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+    .connect('mongodb+srv://Balu:7E8LK8P99Lp4P0Gg@cluster0.hagxy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
     //.connect('mongodb://localhost:27017/ticket-master')
     .then(() => {
       console.log('connected to db');
